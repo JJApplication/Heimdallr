@@ -4,5 +4,6 @@ export ExtraApps="sshd,dockerd"
 export To=liaorenj@gmail.com
 export MongoName=ApolloMongo
 export MongoURL=mongodb://127.0.0.1:27017
+export JobSystemCheck=disable
 export JobSysLoopCheck=disable
 export JobAppLoopCheck=disable

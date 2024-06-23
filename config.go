@@ -59,11 +59,11 @@ func init() {
 		MongoURL:    envLoader.Get("MongoURL").Raw(),
 
 		// jobs
-		JobHealthCheck:  envLoader.Get("").MustString("30m"),
-		JobAppCheck:     envLoader.Get("").MustString("0 0 9 * * ?"),
-		JobSystemCheck:  envLoader.Get("").MustString("0 0 8 * * ?"),
-		JobSysLoopCheck: envLoader.Get("").MustString("0 0 0/6 * * ?"),
-		JobAppLoopCheck: envLoader.Get("").MustString("0 0 0/1 * * ?"),
+		JobHealthCheck:  envLoader.Get("JobHealthCheck").MustString("30m"),
+		JobAppCheck:     envLoader.Get("JobAppCheck").MustString("0 0 9 * * ?"),
+		JobSystemCheck:  envLoader.Get("JobSystemCheck").MustString("0 0 8 * * ?"),
+		JobSysLoopCheck: envLoader.Get("JobSysLoopCheck").MustString("0 0 0/6 * * ?"),
+		JobAppLoopCheck: envLoader.Get("JobAppLoopCheck").MustString("0 0 0/1 * * ?"),
 	}
 }
 
